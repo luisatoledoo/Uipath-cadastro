@@ -1,0 +1,308 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="688,3510" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="Browser1" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="688,3487" sap2010:WorkflowViewState.IdRef="Sequence_13">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Informações de contato - Opera" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="654,3404" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" ScopeGuid="6d6c89f5-d762-46c5-a58a-8e23c0e2f5dc" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="620,3112" sap2010:WorkflowViewState.IdRef="Sequence_14">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ueab:SequenceX DisplayName="Single Excel Process Scope" sap:VirtualizedContainerService.HintSize="586,3050" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="552,2963" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="C:\Users\luisa\OneDrive\Documentos\projetos programação\UiPath\cadastro\Pasta1.xlsx">
+                  <ueab:ExcelApplicationCard.Body>
+                    <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="518,2665" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="484,2603" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_2" Range="[Excel.Sheet(&quot;Planilha1&quot;)]" SaveAfterEachRow="False">
+                          <ueab:ExcelForEachRowX.Body>
+                            <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                              <ActivityAction.Argument1>
+                                <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                              </ActivityAction.Argument1>
+                              <ActivityAction.Argument2>
+                                <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                              </ActivityAction.Argument2>
+                              <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="450,2385" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="416,123" sap2010:WorkflowViewState.IdRef="Delay_4" />
+                                <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,249" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_4" Shortcuts="[d(hk)][k(Down)][u(hk)][d(hk)][k(Down)][u(hk)][d(hk)][k(down)][u(hk)]" Version="V4">
+                                  <uix:NKeyboardShortcuts.VerifyOptions>
+                                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                      <uix:VerifyExecutionOptions.Retry>
+                                        <InArgument x:TypeArguments="x:Boolean" />
+                                      </uix:VerifyExecutionOptions.Retry>
+                                      <uix:VerifyExecutionOptions.Timeout>
+                                        <InArgument x:TypeArguments="x:Double" />
+                                      </uix:VerifyExecutionOptions.Timeout>
+                                    </uix:VerifyExecutionOptions>
+                                  </uix:NKeyboardShortcuts.VerifyOptions>
+                                </uix:NKeyboardShortcuts>
+                                <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="416,123" sap2010:WorkflowViewState.IdRef="Delay_5" />
+                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Nome'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,288" sap2010:WorkflowViewState.IdRef="NTypeInto_12" ScopeIdentifier="6d6c89f5-d762-46c5-a58a-8e23c0e2f5dc" Text="[CurrentRow(&quot;Nome&quot;).ToString]" Version="V4">
+                                  <uix:NTypeInto.Target>
+                                    <uix:TargetAnchorable CVScreenId="d4cf4c33-068b-4b61-aa5f-16f8b0ca7dd4" ContentHash="WFFEM_TSD0uaRR6GTBEVlQ" CvElementArea="684, 405, 297, 32" CvType="InputBox" DesignTimeRectangle="686, 411, 295, 25" ElementType="InputBox" FuzzySelectorArgument="&lt;ctrl name='Informações de contato' role='document' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Nome Pergunta obrigatória' role='editable text' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' /&gt;" Guid="13366181-7fed-45e8-81f7-ca7a786ba6b7" InformativeScreenshot="4e384ea9df3b430467a66efd4d4c2a0e.png" Reference="_Aeef7PsyUaHaxBpXx7pFg/VrWeCydE2kOrZE7eiwOmbg" ScopeSelectorArgument="&lt;wnd app='opera.exe' cls='Chrome_WidgetWin_1' title='Informações de contato - Opera' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target CVScreenId="d4cf4c33-068b-4b61-aa5f-16f8b0ca7dd4" CvTextArea="685, 360, 55, 15" CvTextArgument="Nome *" CvType="Text" DesignTimeRectangle="686, 357, 55, 25" FuzzySelectorArgument="&lt;ctrl name='Informações de contato' role='document' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Nome Pergunta obrigatória' role='grouping' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='Nome' /&gt;" Guid="e381c267-07c5-41b7-a9ab-dd4e82e58a7f" SearchSteps="FuzzySelector, CV" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NTypeInto.Target>
+                                  <uix:NTypeInto.VerifyOptions>
+                                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                        <InArgument x:TypeArguments="x:Boolean" />
+                                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                        <InArgument x:TypeArguments="x:Double" />
+                                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                    </uix:VerifyExecutionTypeIntoOptions>
+                                  </uix:NTypeInto.VerifyOptions>
+                                </uix:NTypeInto>
+                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'E-mail'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,288" sap2010:WorkflowViewState.IdRef="NTypeInto_13" ScopeIdentifier="6d6c89f5-d762-46c5-a58a-8e23c0e2f5dc" Text="[CurrentRow(&quot;Email&quot;).ToString]" Version="V4">
+                                  <uix:NTypeInto.Target>
+                                    <uix:TargetAnchorable CVScreenId="d4cf4c33-068b-4b61-aa5f-16f8b0ca7dd4" ContentHash="uoAOt8s0cEK_FLHrwUg2Xw" CvElementArea="683, 556, 299, 31" CvType="InputBox" DesignTimeRectangle="686, 561, 295, 25" ElementType="InputBox" FuzzySelectorArgument="&lt;ctrl name='Informações de contato' role='document' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='E-mail Pergunta obrigatória' role='editable text' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' /&gt;" Guid="aa1b4bc4-b97a-4c22-ab19-ab6905a9033a" InformativeScreenshot="e8e5927f55dc5903801e51af643f172a.png" Reference="_Aeef7PsyUaHaxBpXx7pFg/CvhgVqC2Q0mhTGIQDraI5Q" ScopeSelectorArgument="&lt;wnd app='opera.exe' cls='Chrome_WidgetWin_1' title='Informações de contato - Opera' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target CVScreenId="d4cf4c33-068b-4b61-aa5f-16f8b0ca7dd4" CvTextArea="685, 510, 56, 15" CvTextArgument="E-mail *" CvType="Text" DesignTimeRectangle="686, 507, 56, 25" FuzzySelectorArgument="&lt;ctrl name='Informações de contato' role='document' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='E-mail Pergunta obrigatória' role='grouping' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='E-mail' /&gt;" Guid="1d861161-ee18-4fce-aec0-b881417f7a14" SearchSteps="FuzzySelector, CV" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NTypeInto.Target>
+                                  <uix:NTypeInto.VerifyOptions>
+                                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                        <InArgument x:TypeArguments="x:Boolean" />
+                                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                        <InArgument x:TypeArguments="x:Double" />
+                                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                    </uix:VerifyExecutionTypeIntoOptions>
+                                  </uix:NTypeInto.VerifyOptions>
+                                </uix:NTypeInto>
+                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Número de telefone'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,288" sap2010:WorkflowViewState.IdRef="NTypeInto_14" ScopeIdentifier="6d6c89f5-d762-46c5-a58a-8e23c0e2f5dc" Text="[CurrentRow(&quot;Telefone&quot;).ToString]" Version="V4">
+                                  <uix:NTypeInto.Target>
+                                    <uix:TargetAnchorable CVScreenId="d4cf4c33-068b-4b61-aa5f-16f8b0ca7dd4" ContentHash="OuSHLy3trEG83FqrH1ODZQ" CvElementArea="683, 706, 299, 31" CvType="InputBox" DesignTimeRectangle="686, 711, 295, 25" ElementType="InputBox" FuzzySelectorArgument="&lt;ctrl name='Informações de contato' role='document' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Número de telefone' role='editable text' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' /&gt;" Guid="a7e3c2cc-9b71-4b99-8512-e2d59d3bd3b7" InformativeScreenshot="aaec8cf938cb4099d1406d04cc7a5400.png" Reference="_Aeef7PsyUaHaxBpXx7pFg/Z411zBObN0O6h0pn89cFmw" ScopeSelectorArgument="&lt;wnd app='opera.exe' cls='Chrome_WidgetWin_1' title='Informações de contato - Opera' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target CVScreenId="d4cf4c33-068b-4b61-aa5f-16f8b0ca7dd4" CvTextArea="685, 660, 142, 15" CvTextArgument="Número de telefone" CvType="Text" DesignTimeRectangle="686, 657, 141, 25" FuzzySelectorArgument="&lt;ctrl name='Informações de contato' role='document' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Número de telefone' role='grouping' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='Número de telefone' /&gt;" Guid="97db5e8b-f00d-4e63-ae72-91f19598d244" SearchSteps="FuzzySelector, CV" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NTypeInto.Target>
+                                  <uix:NTypeInto.VerifyOptions>
+                                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                        <InArgument x:TypeArguments="x:Boolean" />
+                                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                        <InArgument x:TypeArguments="x:Double" />
+                                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                    </uix:VerifyExecutionTypeIntoOptions>
+                                  </uix:NTypeInto.VerifyOptions>
+                                </uix:NTypeInto>
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'grouping'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,227" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6d6c89f5-d762-46c5-a58a-8e23c0e2f5dc" Version="V4">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable CVScreenId="9d657207-af8f-4e6b-9e96-5c1b61023f5f" ContentHash="_H9tIJC5OUyt2kSmgAVR7g" CvElementArea="659, 990, 93, 39" CvTextArea="683, 1003, 45, 13" CvTextArgument="Enviar" CvType="Button" DesignTimeRectangle="661, 992, 90, 37" FullSelectorArgument="&lt;ctrl name='Informações de contato' role='document' /&gt;&lt;ctrl name='Submit' role='push button' /&gt;&lt;ctrl role='grouping' /&gt;" Guid="21b66b40-157d-4301-8a41-564690a1ddfa" InformativeScreenshot="70579a7d5548ea558e1fd351a1a31fa4.png" Reference="_Aeef7PsyUaHaxBpXx7pFg/Py-yOD8NTkiaoPo1n4TW0w" ScopeSelectorArgument="&lt;wnd app='opera.exe' cls='Chrome_WidgetWin_1' title='Informações de contato - Opera' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                                  </uix:NClick.Target>
+                                  <uix:NClick.VerifyOptions>
+                                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                      <uix:VerifyExecutionOptions.Retry>
+                                        <InArgument x:TypeArguments="x:Boolean" />
+                                      </uix:VerifyExecutionOptions.Retry>
+                                      <uix:VerifyExecutionOptions.Timeout>
+                                        <InArgument x:TypeArguments="x:Double" />
+                                      </uix:VerifyExecutionOptions.Timeout>
+                                    </uix:VerifyExecutionOptions>
+                                  </uix:NClick.VerifyOptions>
+                                </uix:NClick>
+                                <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="416,123" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                                <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,249" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(f5)][u(hk)]" Version="V4">
+                                  <uix:NKeyboardShortcuts.VerifyOptions>
+                                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                      <uix:VerifyExecutionOptions.Retry>
+                                        <InArgument x:TypeArguments="x:Boolean" />
+                                      </uix:VerifyExecutionOptions.Retry>
+                                      <uix:VerifyExecutionOptions.Timeout>
+                                        <InArgument x:TypeArguments="x:Double" />
+                                      </uix:VerifyExecutionOptions.Timeout>
+                                    </uix:VerifyExecutionOptions>
+                                  </uix:NKeyboardShortcuts.VerifyOptions>
+                                </uix:NKeyboardShortcuts>
+                                <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="416,123" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                                <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,242" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" Shortcuts="[d(hk)][k(Down)][u(hk)][d(hk)][k(down)][u(hk)]" Version="V4">
+                                  <uix:NKeyboardShortcuts.VerifyOptions>
+                                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                      <uix:VerifyExecutionOptions.Retry>
+                                        <InArgument x:TypeArguments="x:Boolean" />
+                                      </uix:VerifyExecutionOptions.Retry>
+                                      <uix:VerifyExecutionOptions.Timeout>
+                                        <InArgument x:TypeArguments="x:Double" />
+                                      </uix:VerifyExecutionOptions.Timeout>
+                                    </uix:VerifyExecutionOptions>
+                                  </uix:NKeyboardShortcuts.VerifyOptions>
+                                </uix:NKeyboardShortcuts>
+                              </Sequence>
+                            </ActivityAction>
+                          </ueab:ExcelForEachRowX.Body>
+                        </ueab:ExcelForEachRowX>
+                      </Sequence>
+                    </ActivityAction>
+                  </ueab:ExcelApplicationCard.Body>
+                </ueab:ExcelApplicationCard>
+              </ueab:SequenceX>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-8, -8, 1936, 1056" Arguments="https://docs.google.com/forms/d/e/1FAIpQLSeLeghUJ-AjJw5CzkqEgmQDxK5VimjQAmxM7clOpdWzvZemuQ/viewform" ContentHash="Yb5Ctjvbq0iGrecAvXyOqA" FilePath="C:\Users\luisa\AppData\Local\Programs\Opera GX\opera.exe" IconBase64="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" InformativeScreenshot="bab8879484712501d15594da070c4915.png" Reference="_Aeef7PsyUaHaxBpXx7pFg/-Dz-ijqa4Uu65LAsKZ7yOw" Selector="&lt;wnd app='opera.exe' cls='Chrome_WidgetWin_1' title='Informações de contato - Opera' /&gt;" Version="V2" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>
