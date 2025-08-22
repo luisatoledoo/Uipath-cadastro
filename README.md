@@ -6,3 +6,7 @@ Funcionalidades:
 
 
 
+
+
+https://github.com/user-attachments/assets/eeb6f985-10f7-4ec1-8d01-87dd6fb12e50
+
